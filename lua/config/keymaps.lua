@@ -139,6 +139,8 @@ keymap.set("n", ",r", ":Jaq quickfix<Return>", opts)
 
 -- Telescope-file-browser
 keymap.set("n", ",fb", ":Telescope file_browser<Return>", opts)
+keymap.set("n", ",ff", ":Telescope find_files<Return>", opts)
+keymap.set("n", ",fg", ":Telescope live_grep<Return>", opts)
 
 -- Commentary.vim
 keymap.set("n", ",/", ":Commentary<Return>", opts)
