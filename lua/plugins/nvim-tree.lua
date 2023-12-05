@@ -2,10 +2,6 @@ return {
 	"nvim-tree/nvim-tree.lua",
 	requires = { "nvim-tree/nvim-web-devicons", "nvim-telescope/telescope.nvim" },
 	config = function()
-		-- netrwの無効化
-		vim.api.nvim_set_var("loaded_netrw", 1)
-		vim.api.nvim_set_var("loaded_netrwPlugin", 1)
-
 		require("nvim-tree").setup({
 			view = {
 				width = "20%",

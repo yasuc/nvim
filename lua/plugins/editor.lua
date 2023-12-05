@@ -46,6 +46,26 @@ return {
 	},
 
 	{
+		"soulis-1256/hoverhints.nvim",
+		opts = {
+			config = function()
+				require("hoverhints").setup({})
+			end,
+		},
+	},
+
+	{
+		"smoka7/hop.nvim",
+		opts = {
+			tag = "*", -- optional but strongly recommended
+			config = function()
+				-- you can configure Hop the way you like here; see :h hop-config
+				require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+			end,
+		},
+	},
+
+	{
 		"telescope.nvim",
 		dependencies = {
 			{
@@ -204,9 +224,5 @@ return {
 			require("telescope").load_extension("fzf")
 			require("telescope").load_extension("file_browser")
 		end,
-	},
-	{
-		"nvim-telescope/telescope-file-browser.nvim",
-		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
 	},
 }

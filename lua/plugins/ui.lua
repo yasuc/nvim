@@ -98,6 +98,9 @@ return {
 				-- globalstatus = false,
 				theme = "solarized_dark",
 			},
+			sections = {
+				lualine_x = { "encoding", "fileformat", "filetype" },
+			},
 		},
 	},
 
