@@ -5,6 +5,7 @@ return {
 		default = {
 			-- -- file and directory options
 			dir_path = "images", ---@type string
+			relative_to_current_file = true, --@type boolean
 			prompt_for_file_name = false, ---@type boolean
 		},
 		-- add options here
